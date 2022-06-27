@@ -1,4 +1,7 @@
-## Finance test APP
+## Run and test the application on demo-link:
+https://anastasiia-sharkova.github.io/Charts-test-task/
+
+## Charts test APP
 React app, with a component that uses the JS library. The component encapsulates charting functions, controlled inputs and selects. 
 
 Values in the "X axis labels" and "Y axis values" input fields can be changed by the user. When the values change, the chart automatically re-render with the updated labels/values when the input fields lose focus or the user presses "Enter".
