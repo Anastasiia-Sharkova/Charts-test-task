@@ -1,0 +1,1 @@
+export { InputForXAxis } from './inputForXAxis';

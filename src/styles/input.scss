@@ -1,0 +1,21 @@
+.input {
+	width: 100%;
+	font-size: 13px;
+	padding: 6px 0 4px 10px;
+	border: 1px solid rgb(206, 206, 206);
+	background: rgb(245, 248, 233);
+	border-radius: 5px;
+  cursor: text;
+
+  margin-top: 5px;
+
+  &__label {
+    max-width: 720px;
+    margin-bottom: 10px;
+    padding: 0 15px 5px 0;
+  }
+  
+  &__error {
+    color:rgb(165, 42, 42)
+  }
+}

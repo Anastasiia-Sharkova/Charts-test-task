@@ -1,0 +1,1 @@
+export { InputForYAxis } from './InputForYAxis';
