@@ -8,14 +8,17 @@ interface Props {
 export const InputForXAxis = React.memo<Props>(({ onOrderLabel }) => {
   const [labelX, setLabelX] = useState('January, February, March, April, May, June');
   const [isErrorLabelX, setIsErrorLabelX] = useState<string | null>(null);
+  const test = /^[ ,a-zA-Z]+$/;
 
   const isValidateMessage = useCallback(() => {
     if (!labelX.trim()) {
       setIsErrorLabelX('Please enter the label!');
+      return false;
     }
 
-    if (!/^,\[a-zA-Z]+$/.test(labelX)) {
+    if (!test.test(labelX)) {
       setIsErrorLabelX('Please, enter lables separated by commas!');
+      return false;
     }
 
     return true;
@@ -43,7 +46,7 @@ export const InputForXAxis = React.memo<Props>(({ onOrderLabel }) => {
       name="X-axis-values"
       className="input__label"
       onSubmit={handleLabelChange}
-    >
+      >
       <label htmlFor="inputX-axis">
         X axis values:
         {isErrorLabelX

@@ -18,7 +18,7 @@ export const InputForYAxis = React.memo<Props>(({ onOrderValue }) => {
       setIsErrorValueY('Please, enter numbers separated by commas!')
     }
 
-    if (!valueY.trim() || !/^[ -,0-9]+$/.test(valueY)) {
+    if (!valueY.trim() || /^[ -,0-9]+$/.test(valueY)) {
       return false;
     }
 
@@ -46,7 +46,7 @@ export const InputForYAxis = React.memo<Props>(({ onOrderValue }) => {
     <form
       name="Y-axis-values"
       className="input__label"
-      onSubmit={handleInputYChange}
+      onSubmit={() => handleInputYChange}
     >
       <label 
         htmlFor="inputY-axis"
@@ -56,7 +56,7 @@ export const InputForYAxis = React.memo<Props>(({ onOrderValue }) => {
         {isErrorValueY
           && <div className="input__error">{isErrorValueY}</div>} 
         <input
-        className="input"
+          className="input"
           type="text"
           id="inputY-axis"
           name="inputY-axis"
