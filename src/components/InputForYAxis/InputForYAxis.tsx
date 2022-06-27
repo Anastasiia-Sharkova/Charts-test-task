@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import '../../styles/input.css';
+import '../../styles/input.scss';
 
 interface Props {
   onOrderValue: (value: string) => void;

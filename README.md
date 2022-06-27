@@ -1,8 +1,10 @@
 ## Finance test APP
-The application connects to a locally running service and displays price changes for some tickers in real time.
-The user can add and remove tickers from the list. Price changes are highlighted in color and with a direction arrow. Adaptive layout.
-Server deployed to Heroku: https://api-server-anastasiia-sharkova.herokuapp.com/
-You can see how APP works here: https://anastasiia-sharkova.github.io/finance-test-task/
+React app, with a component that uses the JS library. The component encapsulates charting functions, controlled inputs and selects. 
+
+Values in the "X axis labels" and "Y axis values" input fields can be changed by the user. When the values change, the chart automatically re-render with the updated labels/values when the input fields lose focus or the user presses "Enter".
+
+The chart style automatically change when the user changes the radio button selection. 
+Adapting markup.
 
 ## Used technologies:
 React (with hooks)

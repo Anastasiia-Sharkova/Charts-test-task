@@ -1,5 +1,5 @@
 import React from 'react';
-import './RadioButtons.css';
+import './RadioButtons.scss';
 
 interface Props {
   onTypeOfChart: (value: string) => void;

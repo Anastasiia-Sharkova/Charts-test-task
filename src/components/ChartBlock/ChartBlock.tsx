@@ -1,7 +1,7 @@
 import React from 'react';
 import { Chart, registerables } from 'chart.js';
 import { Bar, Line, Radar, Doughnut, PolarArea } from 'react-chartjs-2';
-import './ChartBlock.css';
+import './ChartBlock.scss';
 
 Chart.register(...registerables);
 

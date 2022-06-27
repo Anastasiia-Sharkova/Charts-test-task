@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import './App.css';
+import './App.scss';
 import { InputForXAxis } from './components/InputForXAxis';
 import { InputForYAxis } from './components/InputForYAxis';
 import { ChartBlock } from './components/ChartBlock';
